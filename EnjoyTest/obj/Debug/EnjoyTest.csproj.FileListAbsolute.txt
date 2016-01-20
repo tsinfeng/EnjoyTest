@@ -1,0 +1,9 @@
+D:\CSharpWork\EnjoyTest\EnjoyTest\bin\Debug\EnjoyTest.exe
+D:\CSharpWork\EnjoyTest\EnjoyTest\bin\Debug\EnjoyTest.pdb
+D:\CSharpWork\EnjoyTest\EnjoyTest\obj\Debug\ResolveAssemblyReference.cache
+D:\CSharpWork\EnjoyTest\EnjoyTest\obj\Debug\EnjoyTest.mainForm.resources
+D:\CSharpWork\EnjoyTest\EnjoyTest\obj\Debug\EnjoyTest.Properties.Resources.resources
+D:\CSharpWork\EnjoyTest\EnjoyTest\obj\Debug\EnjoyTest.csproj.GenerateResource.Cache
+D:\CSharpWork\EnjoyTest\EnjoyTest\obj\Debug\EnjoyTest.exe
+D:\CSharpWork\EnjoyTest\EnjoyTest\obj\Debug\EnjoyTest.pdb
+D:\CSharpWork\EnjoyTest\EnjoyTest\obj\Debug\EnjoyTest.App2.resources
