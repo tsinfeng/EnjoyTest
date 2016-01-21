@@ -6,4 +6,4 @@ D:\CSharpWork\EnjoyTest\EnjoyTest\obj\Debug\EnjoyTest.Properties.Resources.resou
 D:\CSharpWork\EnjoyTest\EnjoyTest\obj\Debug\EnjoyTest.csproj.GenerateResource.Cache
 D:\CSharpWork\EnjoyTest\EnjoyTest\obj\Debug\EnjoyTest.exe
 D:\CSharpWork\EnjoyTest\EnjoyTest\obj\Debug\EnjoyTest.pdb
-D:\CSharpWork\EnjoyTest\EnjoyTest\obj\Debug\EnjoyTest.App2.resources
+D:\CSharpWork\EnjoyTest\EnjoyTest\obj\Debug\EnjoyTest.ScriptWin.resources

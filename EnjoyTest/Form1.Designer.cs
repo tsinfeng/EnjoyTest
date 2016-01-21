@@ -30,9 +30,10 @@
         {
             this.uniteMenu = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.app1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.app2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.app3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.运行脚本RToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.保存日志SToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.最近文件FToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.退出XToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.uniteMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,33 +50,39 @@
             // fileToolStripMenuItem
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.app1ToolStripMenuItem,
-            this.app2ToolStripMenuItem,
-            this.app3ToolStripMenuItem});
+            this.运行脚本RToolStripMenuItem,
+            this.保存日志SToolStripMenuItem,
+            this.最近文件FToolStripMenuItem,
+            this.退出XToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(39, 21);
             this.fileToolStripMenuItem.Text = "File";
             // 
-            // app1ToolStripMenuItem
+            // 运行脚本RToolStripMenuItem
             // 
-            this.app1ToolStripMenuItem.Name = "app1ToolStripMenuItem";
-            this.app1ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.app1ToolStripMenuItem.Text = "App1";
-            this.app1ToolStripMenuItem.Click += new System.EventHandler(this.app1ToolStripMenuItem_Click);
+            this.运行脚本RToolStripMenuItem.Name = "打开脚本RToolStripMenuItem";
+            this.运行脚本RToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.运行脚本RToolStripMenuItem.Text = "打开脚本(&R)";
+            this.运行脚本RToolStripMenuItem.Click += new System.EventHandler(this.打开脚本RToolStripMenuItem_Click);
             // 
-            // app2ToolStripMenuItem
+            // 保存日志SToolStripMenuItem
             // 
-            this.app2ToolStripMenuItem.Name = "app2ToolStripMenuItem";
-            this.app2ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.app2ToolStripMenuItem.Text = "App2";
-            this.app2ToolStripMenuItem.Click += new System.EventHandler(this.app2ToolStripMenuItem_Click);
+            this.保存日志SToolStripMenuItem.Name = "保存日志SToolStripMenuItem";
+            this.保存日志SToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.保存日志SToolStripMenuItem.Text = "保存日志(&S)";
             // 
-            // app3ToolStripMenuItem
+            // 最近文件FToolStripMenuItem
             // 
-            this.app3ToolStripMenuItem.Name = "app3ToolStripMenuItem";
-            this.app3ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.app3ToolStripMenuItem.Text = "App3";
-            this.app3ToolStripMenuItem.Click += new System.EventHandler(this.app3ToolStripMenuItem_Click);
+            this.最近文件FToolStripMenuItem.Name = "最近文件FToolStripMenuItem";
+            this.最近文件FToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.最近文件FToolStripMenuItem.Text = "最近文件(&F)";
+            // 
+            // 退出XToolStripMenuItem
+            // 
+            this.退出XToolStripMenuItem.Name = "退出XToolStripMenuItem";
+            this.退出XToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.退出XToolStripMenuItem.Text = "退出(X)";
+            this.退出XToolStripMenuItem.Click += new System.EventHandler(this.退出XToolStripMenuItem_Click);
             // 
             // mainForm
             // 
@@ -99,9 +106,10 @@
 
         private System.Windows.Forms.MenuStrip uniteMenu;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem app1ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem app2ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem app3ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 运行脚本RToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 保存日志SToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 最近文件FToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 退出XToolStripMenuItem;
     }
 }
 
