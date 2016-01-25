@@ -13,6 +13,8 @@ namespace EnjoyTest
 {
     public partial class mainForm : Form
     {
+        //static string sSaveFilePath = "";
+
         public mainForm()
         {
             InitializeComponent();
@@ -119,5 +121,13 @@ namespace EnjoyTest
         {
             this.Close();
         }
+
+        private void 保存修改SToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog  ofd = new SaveFileDialog();
+            ofd.Filter = "All files (*.*)|*.*|Lua files (*.lua)|*.lua|Bat files (*.bat)|*.bat|Python files (*.py)|*.py";
+            
+        }
+
     }
 }

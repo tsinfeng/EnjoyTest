@@ -31,6 +31,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.buttonRun = new System.Windows.Forms.Button();
             this.buttonStop = new System.Windows.Forms.Button();
+            this.checkBoxSave = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // textBox1
@@ -41,6 +42,7 @@
             this.textBox1.Location = new System.Drawing.Point(-1, -2);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
+            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBox1.Size = new System.Drawing.Size(698, 564);
             this.textBox1.TabIndex = 0;
             // 
@@ -66,16 +68,30 @@
             this.buttonStop.UseVisualStyleBackColor = true;
             this.buttonStop.Click += new System.EventHandler(this.buttonStop_Click);
             // 
+            // checkBoxSave
+            // 
+            this.checkBoxSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.checkBoxSave.AutoSize = true;
+            this.checkBoxSave.Location = new System.Drawing.Point(710, 30);
+            this.checkBoxSave.Name = "checkBoxSave";
+            this.checkBoxSave.Size = new System.Drawing.Size(72, 16);
+            this.checkBoxSave.TabIndex = 3;
+            this.checkBoxSave.Text = "保存日志";
+            this.checkBoxSave.UseVisualStyleBackColor = true;
+            this.checkBoxSave.CheckedChanged += new System.EventHandler(this.checkBoxSave_CheckedChanged);
+            // 
             // ScriptWin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 562);
+            this.Controls.Add(this.checkBoxSave);
             this.Controls.Add(this.buttonStop);
             this.Controls.Add(this.buttonRun);
             this.Controls.Add(this.textBox1);
             this.Name = "ScriptWin";
             this.Text = "ScriptWin";
+            this.Load += new System.EventHandler(this.ScriptWin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -86,5 +102,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button buttonRun;
         private System.Windows.Forms.Button buttonStop;
+        private System.Windows.Forms.CheckBox checkBoxSave;
     }
 }

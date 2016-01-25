@@ -31,7 +31,7 @@
             this.uniteMenu = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.运行脚本RToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.保存日志SToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.保存修改SToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.最近文件FToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.退出XToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.uniteMenu.SuspendLayout();
@@ -51,7 +51,7 @@
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.运行脚本RToolStripMenuItem,
-            this.保存日志SToolStripMenuItem,
+            this.保存修改SToolStripMenuItem,
             this.最近文件FToolStripMenuItem,
             this.退出XToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
@@ -60,16 +60,17 @@
             // 
             // 运行脚本RToolStripMenuItem
             // 
-            this.运行脚本RToolStripMenuItem.Name = "打开脚本RToolStripMenuItem";
+            this.运行脚本RToolStripMenuItem.Name = "运行脚本RToolStripMenuItem";
             this.运行脚本RToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.运行脚本RToolStripMenuItem.Text = "打开脚本(&R)";
             this.运行脚本RToolStripMenuItem.Click += new System.EventHandler(this.打开脚本RToolStripMenuItem_Click);
             // 
-            // 保存日志SToolStripMenuItem
+            // 保存修改SToolStripMenuItem
             // 
-            this.保存日志SToolStripMenuItem.Name = "保存日志SToolStripMenuItem";
-            this.保存日志SToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.保存日志SToolStripMenuItem.Text = "保存日志(&S)";
+            this.保存修改SToolStripMenuItem.Name = "保存修改SToolStripMenuItem";
+            this.保存修改SToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.保存修改SToolStripMenuItem.Text = "保存修改(&S)";
+            this.保存修改SToolStripMenuItem.Click += new System.EventHandler(this.保存修改SToolStripMenuItem_Click);
             // 
             // 最近文件FToolStripMenuItem
             // 
@@ -107,9 +108,9 @@
         private System.Windows.Forms.MenuStrip uniteMenu;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 运行脚本RToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 保存日志SToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 最近文件FToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 退出XToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 保存修改SToolStripMenuItem;
     }
 }
 
