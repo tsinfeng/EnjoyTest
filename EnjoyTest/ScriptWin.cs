@@ -18,7 +18,7 @@ namespace EnjoyTest
     {
         string strFilePath;
         Process p = null;
-        string sSaveFilePath;
+        string sSaveFilePath = "";
 
         public ScriptWin(string path)
         {

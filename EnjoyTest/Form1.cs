@@ -42,16 +42,6 @@ namespace EnjoyTest
 
         }
 
-        /*
-        private void app3ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            App3 appForm3 = new App3();
-            appForm3.MdiParent = this;
-            appForm3.Show();
-            appForm3.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-        }
-         */
-
         private void 打开脚本RToolStripMenuItem_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog();
@@ -122,12 +112,36 @@ namespace EnjoyTest
             this.Close();
         }
 
+        private void AFG3022AToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AFGWin afgWin = new AFGWin();
+            afgWin.MdiParent = this;
+            afgWin.Text = "AFG3022";
+            afgWin.Show();
+        }
+
+        private void toolStripButtonExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void toolStripButtonOpen_Click(object sender, EventArgs e)
+        {
+            运行脚本RToolStripMenuItem.PerformClick();
+        }
+
+        private void toolStripButtonAFG_Click(object sender, EventArgs e)
+        {
+            AFG3022AToolStripMenuItem.PerformClick();
+        }
+
+        /*
         private void 保存修改SToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SaveFileDialog  ofd = new SaveFileDialog();
             ofd.Filter = "All files (*.*)|*.*|Lua files (*.lua)|*.lua|Bat files (*.bat)|*.bat|Python files (*.py)|*.py";
             
         }
-
+        */
     }
 }
