@@ -29,32 +29,32 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBoxCarrierFre = new System.Windows.Forms.TextBox();
-            this.textBoxLowFre = new System.Windows.Forms.TextBox();
-            this.textBoxFreOffset = new System.Windows.Forms.TextBox();
-            this.textBoxCRange = new System.Windows.Forms.TextBox();
-            this.textBoxSingleFre = new System.Windows.Forms.TextBox();
-            this.textBoxSRange = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.buttonCFSend = new System.Windows.Forms.Button();
-            this.buttonSFSend = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
+            this.buttonSFSend = new System.Windows.Forms.Button();
+            this.buttonCFSend = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBoxSRange = new System.Windows.Forms.TextBox();
+            this.textBoxSingleFre = new System.Windows.Forms.TextBox();
+            this.textBoxCRange = new System.Windows.Forms.TextBox();
+            this.textBoxFreOffset = new System.Windows.Forms.TextBox();
+            this.textBoxLowFre = new System.Windows.Forms.TextBox();
+            this.textBoxCarrierFre = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBoxOffset = new System.Windows.Forms.TextBox();
             this.buttonACsend = new System.Windows.Forms.Button();
+            this.textBoxOffset = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.buttonLuaRun = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.comboBoxSerials = new System.Windows.Forms.ComboBox();
             this.buttonOpen = new System.Windows.Forms.Button();
+            this.comboBoxSerials = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -87,120 +87,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "交流";
             // 
-            // label1
+            // label8
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(33, 27);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 12);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "调制：";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(33, 163);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 12);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "单频：";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(33, 56);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(29, 12);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "载频";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(174, 56);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(29, 12);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "低频";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(311, 56);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(29, 12);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "频偏";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(448, 56);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(29, 12);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "幅度";
-            // 
-            // textBoxCarrierFre
-            // 
-            this.textBoxCarrierFre.Location = new System.Drawing.Point(33, 85);
-            this.textBoxCarrierFre.Name = "textBoxCarrierFre";
-            this.textBoxCarrierFre.Size = new System.Drawing.Size(100, 21);
-            this.textBoxCarrierFre.TabIndex = 6;
-            // 
-            // textBoxLowFre
-            // 
-            this.textBoxLowFre.Location = new System.Drawing.Point(176, 85);
-            this.textBoxLowFre.Name = "textBoxLowFre";
-            this.textBoxLowFre.Size = new System.Drawing.Size(100, 21);
-            this.textBoxLowFre.TabIndex = 7;
-            // 
-            // textBoxFreOffset
-            // 
-            this.textBoxFreOffset.Location = new System.Drawing.Point(313, 85);
-            this.textBoxFreOffset.Name = "textBoxFreOffset";
-            this.textBoxFreOffset.Size = new System.Drawing.Size(100, 21);
-            this.textBoxFreOffset.TabIndex = 8;
-            // 
-            // textBoxCRange
-            // 
-            this.textBoxCRange.Location = new System.Drawing.Point(450, 85);
-            this.textBoxCRange.Name = "textBoxCRange";
-            this.textBoxCRange.Size = new System.Drawing.Size(100, 21);
-            this.textBoxCRange.TabIndex = 9;
-            // 
-            // textBoxSingleFre
-            // 
-            this.textBoxSingleFre.Location = new System.Drawing.Point(33, 221);
-            this.textBoxSingleFre.Name = "textBoxSingleFre";
-            this.textBoxSingleFre.Size = new System.Drawing.Size(100, 21);
-            this.textBoxSingleFre.TabIndex = 10;
-            // 
-            // textBoxSRange
-            // 
-            this.textBoxSRange.Location = new System.Drawing.Point(176, 221);
-            this.textBoxSRange.Name = "textBoxSRange";
-            this.textBoxSRange.Size = new System.Drawing.Size(100, 21);
-            this.textBoxSRange.TabIndex = 11;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(33, 192);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(29, 12);
-            this.label7.TabIndex = 12;
-            this.label7.Text = "频率";
-            // 
-            // buttonCFSend
-            // 
-            this.buttonCFSend.Location = new System.Drawing.Point(33, 123);
-            this.buttonCFSend.Name = "buttonCFSend";
-            this.buttonCFSend.Size = new System.Drawing.Size(81, 23);
-            this.buttonCFSend.TabIndex = 13;
-            this.buttonCFSend.Text = "发送";
-            this.buttonCFSend.UseVisualStyleBackColor = true;
-            this.buttonCFSend.Click += new System.EventHandler(this.buttonCFSend_Click);
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(186, 192);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(29, 12);
+            this.label8.TabIndex = 15;
+            this.label8.Text = "幅度";
             // 
             // buttonSFSend
             // 
@@ -212,14 +106,120 @@
             this.buttonSFSend.UseVisualStyleBackColor = true;
             this.buttonSFSend.Click += new System.EventHandler(this.buttonSFSend_Click);
             // 
-            // label8
+            // buttonCFSend
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(186, 192);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(29, 12);
-            this.label8.TabIndex = 15;
-            this.label8.Text = "幅度";
+            this.buttonCFSend.Location = new System.Drawing.Point(33, 123);
+            this.buttonCFSend.Name = "buttonCFSend";
+            this.buttonCFSend.Size = new System.Drawing.Size(81, 23);
+            this.buttonCFSend.TabIndex = 13;
+            this.buttonCFSend.Text = "发送";
+            this.buttonCFSend.UseVisualStyleBackColor = true;
+            this.buttonCFSend.Click += new System.EventHandler(this.buttonCFSend_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(33, 192);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(29, 12);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "频率";
+            // 
+            // textBoxSRange
+            // 
+            this.textBoxSRange.Location = new System.Drawing.Point(176, 221);
+            this.textBoxSRange.Name = "textBoxSRange";
+            this.textBoxSRange.Size = new System.Drawing.Size(100, 21);
+            this.textBoxSRange.TabIndex = 11;
+            // 
+            // textBoxSingleFre
+            // 
+            this.textBoxSingleFre.Location = new System.Drawing.Point(33, 221);
+            this.textBoxSingleFre.Name = "textBoxSingleFre";
+            this.textBoxSingleFre.Size = new System.Drawing.Size(100, 21);
+            this.textBoxSingleFre.TabIndex = 10;
+            // 
+            // textBoxCRange
+            // 
+            this.textBoxCRange.Location = new System.Drawing.Point(450, 85);
+            this.textBoxCRange.Name = "textBoxCRange";
+            this.textBoxCRange.Size = new System.Drawing.Size(100, 21);
+            this.textBoxCRange.TabIndex = 9;
+            // 
+            // textBoxFreOffset
+            // 
+            this.textBoxFreOffset.Location = new System.Drawing.Point(313, 85);
+            this.textBoxFreOffset.Name = "textBoxFreOffset";
+            this.textBoxFreOffset.Size = new System.Drawing.Size(100, 21);
+            this.textBoxFreOffset.TabIndex = 8;
+            // 
+            // textBoxLowFre
+            // 
+            this.textBoxLowFre.Location = new System.Drawing.Point(176, 85);
+            this.textBoxLowFre.Name = "textBoxLowFre";
+            this.textBoxLowFre.Size = new System.Drawing.Size(100, 21);
+            this.textBoxLowFre.TabIndex = 7;
+            // 
+            // textBoxCarrierFre
+            // 
+            this.textBoxCarrierFre.Location = new System.Drawing.Point(33, 85);
+            this.textBoxCarrierFre.Name = "textBoxCarrierFre";
+            this.textBoxCarrierFre.Size = new System.Drawing.Size(100, 21);
+            this.textBoxCarrierFre.TabIndex = 6;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(448, 56);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(29, 12);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "幅度";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(311, 56);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(29, 12);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "频偏";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(174, 56);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(29, 12);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "低频";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(33, 56);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(29, 12);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "载频";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(33, 163);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(41, 12);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "单频：";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(33, 27);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(41, 12);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "调制：";
             // 
             // groupBox2
             // 
@@ -235,22 +235,6 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "直流：";
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(37, 27);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(29, 12);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "偏置";
-            // 
-            // textBoxOffset
-            // 
-            this.textBoxOffset.Location = new System.Drawing.Point(39, 57);
-            this.textBoxOffset.Name = "textBoxOffset";
-            this.textBoxOffset.Size = new System.Drawing.Size(100, 21);
-            this.textBoxOffset.TabIndex = 12;
-            // 
             // buttonACsend
             // 
             this.buttonACsend.Location = new System.Drawing.Point(39, 96);
@@ -260,6 +244,22 @@
             this.buttonACsend.Text = "发送";
             this.buttonACsend.UseVisualStyleBackColor = true;
             this.buttonACsend.Click += new System.EventHandler(this.buttonACsend_Click);
+            // 
+            // textBoxOffset
+            // 
+            this.textBoxOffset.Location = new System.Drawing.Point(39, 57);
+            this.textBoxOffset.Name = "textBoxOffset";
+            this.textBoxOffset.Size = new System.Drawing.Size(100, 21);
+            this.textBoxOffset.TabIndex = 12;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(37, 27);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(29, 12);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "偏置";
             // 
             // buttonLuaRun
             // 
@@ -301,14 +301,6 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "万用表";
             // 
-            // comboBoxSerials
-            // 
-            this.comboBoxSerials.FormattingEnabled = true;
-            this.comboBoxSerials.Location = new System.Drawing.Point(117, 32);
-            this.comboBoxSerials.Name = "comboBoxSerials";
-            this.comboBoxSerials.Size = new System.Drawing.Size(121, 20);
-            this.comboBoxSerials.TabIndex = 5;
-            // 
             // buttonOpen
             // 
             this.buttonOpen.Location = new System.Drawing.Point(300, 30);
@@ -318,6 +310,14 @@
             this.buttonOpen.Text = "打开";
             this.buttonOpen.UseVisualStyleBackColor = true;
             this.buttonOpen.Click += new System.EventHandler(this.buttonOpen_Click);
+            // 
+            // comboBoxSerials
+            // 
+            this.comboBoxSerials.FormattingEnabled = true;
+            this.comboBoxSerials.Location = new System.Drawing.Point(117, 32);
+            this.comboBoxSerials.Name = "comboBoxSerials";
+            this.comboBoxSerials.Size = new System.Drawing.Size(121, 20);
+            this.comboBoxSerials.TabIndex = 5;
             // 
             // AFGWin
             // 
@@ -331,6 +331,8 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "AFGWin";
             this.Text = "AFGWin";
+            this.Load += new System.EventHandler(this.AFGWin_Load);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AFGWin_FormClosing);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

@@ -19,6 +19,7 @@ namespace EnjoyTest
     {
         Thread threadLuaRunner;
         Meter meter = new Meter();
+        HelperApi.ConsoleShow pConsoleShow = null;
 
         public AFGWin()
         {
@@ -104,15 +105,26 @@ namespace EnjoyTest
             }
             finally
             {
+                /*
                 this.Invoke(new MethodInvoker(delegate
                 {
 
-                    this.buttonLuaRun.Text = "运行脚本";
+                     this.buttonLuaRun.Text = "运行脚本";
                 }));
+                 * */
+                if (this.IsHandleCreated)
+                {
+                    MethodInvoker meth = new MethodInvoker(delegate
+                    {
+                        this.buttonLuaRun.Text = "运行脚本";
+                    });
+
+                    this.BeginInvoke(meth);
+                }
+
             }
 
         }
-
         private void buttonCFSend_Click(object sender, EventArgs e)
         {
             float carrier = float.Parse(textBoxCarrierFre.Text);
@@ -141,8 +153,12 @@ namespace EnjoyTest
 
                 if (false == HelperApi.ConsoleShow.consoleState)
                 {
-                    HelperApi.ConsoleShow pConsoleShow = new HelperApi.ConsoleShow();
+                    pConsoleShow = new HelperApi.ConsoleShow();
                     pConsoleShow.CsAllocConsole();
+
+                    //与控制台标题名一样的路径                    string fullPath = System.Environment.CurrentDirectory +"\\EnjoyTest.vshost.exe";                     //根据控制台标题找控制台
+                    int WINDOW_HANDLER = HelperApi.FindWindow(null, fullPath);                    //找关闭按钮                    IntPtr CLOSE_MENU = HelperApi.GetSystemMenu((IntPtr)WINDOW_HANDLER, IntPtr.Zero);                    int SC_CLOSE = 0xF060;                    //关闭按钮禁用                    HelperApi.RemoveMenu(CLOSE_MENU, SC_CLOSE, 0x0);
+
                 }
                 else
                 {
@@ -199,6 +215,44 @@ namespace EnjoyTest
                     }
                 }
             }
+        }
+
+        private void AFGWin_FormClosing(object sender, FormClosingEventArgs e)
+        { 
+            
+            if (pConsoleShow != null)
+            {
+                if (threadLuaRunner.IsAlive == true)
+                {
+                    /*
+                    if(MessageBox.Show("请确认停止脚本运行！")==DialogResult.OK)
+                    {
+                        e.Cancel = true;
+                    }
+                     */
+                    if (this.buttonLuaRun.Text == "停止脚本")
+                    {
+                        this.buttonLuaRun.PerformClick();
+                        pConsoleShow.CsFreeConsole();
+                    }
+
+                }
+                else
+                {
+                    threadLuaRunner.Abort();
+                    pConsoleShow.CsFreeConsole();
+                }
+
+                //buttonLuaRun.PerformClick();
+                
+            }
+            
+           
+        }
+
+        private void AFGWin_Load(object sender, EventArgs e)
+        {
+            comboBoxSerials.DataSource = SerialPort.GetPortNames();
         }
     }
 }
